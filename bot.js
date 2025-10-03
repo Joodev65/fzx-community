@@ -1,3 +1,4 @@
+const { cfg, loadConfig } = require("./config");
 const { Telegraf, session, Scenes: { WizardScene, Stage }, Markup } = require("telegraf");
 const axios = require("axios");
 const crypto = require('crypto');
@@ -8,6 +9,9 @@ require("dotenv").config();
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 // ʙᴏᴛ sᴇᴛᴛɪɢs
+(async () => {
+  await loadConfig();
+
 const cfg = {
   ownerId: process.env.OWNER_ID || "",
   botToken: process.env.BOT_TOKEN || ""
