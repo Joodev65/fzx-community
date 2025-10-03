@@ -10,7 +10,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // ʙᴏᴛ sᴇᴛᴛɪɢs
 const cfg = {
   ownerId: process.env.OWNER_ID || "7978512548",
-  botToken: process.env.BOT_TOKEN || "7789321645:AAFbmbpZB5pbhK4yvPUWHlKfotVlmhtKRkI"
+  botToken: process.env.BOT_TOKEN || "7789321645:AAEqeqqXPTPAPKuHObgFdYd9-QD-zOPAf60"
 };
 
 const VERCEL_TOKEN = process.env.VERCEL_TOKEN || "AFIDKte0MnJN5yXoGzOGAFt0";
